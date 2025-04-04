@@ -1,4 +1,4 @@
-# Redirect-Based Load Balancer
+# Random-Redirect-Based Load Balancer
 
 This project demonstrates a simple redirect-based load balancing system using Node.js and Express.
 
@@ -8,11 +8,11 @@ This project demonstrates a simple redirect-based load balancing system using No
 
 The system consists of:
 
-1. **Redirect-Based Load Balancer**  
+1. **Random-Redirect-Based Load Balancer**  
    A server running on port `3000` that distributes incoming requests to multiple backend servers using HTTP 302 redirects in a round-robin fashion.
 
 2. **Multiple Backend Servers**  
-   Five individual Express servers running on ports `3001` to `3005`, each returning a simple message.
+   Five individual Express servers running on ports `3001` to `300N`, each returning a simple message.
 
 ## 📁 Project Structure
 
