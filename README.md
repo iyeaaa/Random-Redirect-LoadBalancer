@@ -9,8 +9,7 @@ This project demonstrates a simple redirect-based load balancing system using No
 The system consists of:
 
 1. **Random-Redirect-Based Load Balancer**  
-   A server running on port `3000` that distributes incoming requests to multiple backend servers using HTTP 302 redirects in a round-robin fashion.
-
+   A server running on port 3000 that distributes incoming requests to multiple backend servers using HTTP 302 redirects, randomly assigning each request to one of the backend servers.
 2. **Multiple Backend Servers**  
    Five individual Express servers running on ports `3001` to `300N`, each returning a simple message.
 
