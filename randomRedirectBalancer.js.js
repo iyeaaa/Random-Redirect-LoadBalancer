@@ -1,7 +1,6 @@
 const http = require('http');
 
 const servers = [];
-let current = 0;
 let serverCount = 5;
 
 for (let i = 1; i <= serverCount; i++) {
@@ -9,8 +8,8 @@ for (let i = 1; i <= serverCount; i++) {
 }
 
 const server = http.createServer((req, res) => {
-    const target = servers[current];
-    current = (current + 1) % servers.length;
+    const randomIndex = Math.floor(Math.random() * servers.length);
+    const target = servers[randomIndex];
 
     // 리다이렉트 응답 (302 Found)
     res.writeHead(302, {
